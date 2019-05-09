@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,300i,400,700,700i');
+* {
+	
+}
+body {
+	font-family: 'Prompt', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #904061;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+/*---------------------------------------------------------utlities-------*/
+.text-blu {
+/*	color: rgb(0, 20, 165);
+	color:  rgba(255, 75, 31,.9);*/
+	color: #904061;
+}
+a.text-blu:hover {
+	color: #904061;
+}
+.bg-gradient{
+
+	background-color: #692c45;
+}
+.bg-footer{
+background: -webkit-linear-gradient(to top, #101010, #040404);
+background: linear-gradient(to top, #101010, #040404);
+
+}
+p.h5 {
+	font-weight: 300;
+}
+.py-100 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+@media screen and (min-width:480px){
+	.py-100 {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+.h-max {
+	max-height: calc(100vh - 160px);
+}
+/*---------------------------------------------------------ul li-------*/
+ul li{
+	list-style-type: none;
+	position: relative;
+}
+ul li:before {
+	content: '';
+	width: 28px;
+	height: 1px;
+	position: absolute;
+	display: block;
+	background-color: #dee2e6;
+	top: 12px;
+	left: -40px;
+}
+.w-0 {
+	width: 0%;
+}
+.w-90 {
+	width: 90%;
+}
+.w-80 {
+	width: 80%;
+}
+.h-0 {
+	max-height: 0px;
+}
+.display-5 {
+	font-size: 3rem;
+	z-index: 5;
+}
+
+/*---------------------------------------------------------#portfolio.wave-------*/
+#onda-01 {
+	left: 80%;
+}
+#onda-02 {
+	transform: rotateZ(160deg);
+	right: 80%;
+	top: 80%;
+
+}
+#onda-02 {
+	transform-origin: left;
+	transform: rotateZ(160deg);
+	left: 30%;
+	top: 42%;
+}
+#onda-03 {
+	transform-origin: left;
+	transform: rotate(250deg);
+	top: -8%;
+	left: 14%;
+}
+.svg-animate{
+	stroke-dasharray:470 472;
+	stroke-dashoffset:471;
+}
+.svg-play {
+	animation:svg-draw 7s ease forwards
+}
+@keyframes svg-draw { 
+		10% {stroke-dashoffset:471; opacity: 0}
+		20% {opacity: 1}
+		35%,100% {stroke-dashoffset:0}}
+/*---------------------------------------------------------#contatti form-------*/
+#contatti .form-control, #contatti input[type=checkbox] {
+	border-color: rgba(255,255,255,0.30);
+	background-color: transparent;
+}
+#contatti .form-control:focus, #contatti input[type=checkbox]:focus {
+	border-color: rgba(255,255,255,1);
+	box-shadow: 0 0 0 0 transparent;
+	outline: none;
+}
+#contatti textarea {
+/*	min-height: 120px;*/
+	resize: none;
+}
+#contatti input[type="checkbox"] {
+	outline: none;
+	position: relative;
+	background-color: transparent;
+	-webkit-appearance:none;
+	min-width: 24px;
+	min-height: 24px;
+	border: 1px solid rgba(255,255,255,.30);
+}
+#contatti input[type="checkbox"]::after {
+	opacity: 0;
+	transition: all 300ms;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255,255,255,1.00);
+	content: '';
+	display: block;
+	border-radius: 4px;
+	top: 6px;
+	left: 6px;
+	transform: scale(0)  rotate(90deg);
+}
+#contatti input[type="checkbox"]:checked::after {
+	opacity: 1;
+	transform: scale(1)  rotate(0deg);
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255,255,255,1.00);
+	content: '';
+	display: block;
+	border-radius: 4px;
+	top: 6px;
+	left: 6px;
+}
+#contatti .btn:hover, #gallery .btn-white:hover {
+color:black;
+}
+.btn-white {
+	background-color: rgba(255,255,255,1.00);
+}
+.btn.shadow-move {
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.btn.shadow-move:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#contatti input:-webkit-autofill,
+#contatti input:-webkit-autofill:hover, 
+#contatti input:-webkit-autofill:focus, 
+#contatti input:-webkit-autofill:active  {
+transition: background-color 0s ease-in-out 5000s;
+}
+#contatti input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+	text-fill-color: white !important;
+}
+/*---------------------------------------------------------#gallery-items-------*/
+#gallery .row > div.selected {
+	position: relative;
+	z-index: 10000;
+}
+#gallery .row img {
+	cursor: pointer;
+	position: relative;
+	z-index: 0
+}
+/*---------------------------------------------------------#gellery.img-info-------*/
+.img-info-l, .img-info-r {
+	position: absolute;
+	background-color: transparent;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	transition: all 600ms ease-in-out;
+	z-index: -100;
+	padding: 3rem;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transform: scaleX(.4);
+	text-align: right;
+}
+.img-info-l.is-open , .img-info-r.is-open {
+	opacity: 1;
+	transform: scaleX(1);
+}
+.img-info-r.is-open, .img-info-l.is-open {
+	top: 90%;
+	left: 0%;
+	height: 20%;
+}
+#gallery p.h3 {
+	font-size: 22px;
+}
+@media screen and (min-width: 768px){
+	.img-info-l, .img-info-r {
+		background-color: #FFFFFF;
+	}
+	.img-info-l {
+	text-align: left;
+	}
+	.img-info-r.is-open {
+		left: -100%;
+		top: 0%;
+		height: 100%;
+	}
+	.img-info-l.is-open {
+		left: 100%;
+		top: 0%;
+		height: 100%;
+	}
+	#gallery p.h3 {
+	font-size: 1.75rem;
+}
+}
+/*---------------------------------------------------------#contatti svg-------*/
+#contatti .trash {
+	width: 50px;
+}
+#trash-01 {
+	top: -80px;
+	right: -20vw;
+}
+
+#trash-02 {
+	bottom: 30px;
+	right:280px;
+}
+#trash-03 {
+	bottom:10px ;
+	left: 10px;
+}
+/*---------------------------------------------------------#footer svg-------*/
+#hello-hand {
+	transform-origin: bottom;
+	width: 80px;
+	top: 35px;
+	right: 8vw;
+	animation: hello 500ms ease-in-out infinite alternate;
+}
+@keyframes hello {
+	0%  {transform: rotate(15deg)}
+	100% {transform: rotate(-20deg)}
+}
+/*---------------------------------------------------------media-query.retina-display-------*/
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
+/*	#contatti .vh-100, #portfolio .vh-100, #about .vh-100 {
+		height: auto !important;
+		min-height: 100vh;
+	}*/
+	#about.py-100 {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+	.py-100 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+html{font-size:.8rem}@media (min-width: 576px){html{font-size:.9rem}}@media (min-width: 768px){html{font-size:.9rem}}@media (min-width: 992px){html{font-size:1rem}}
+

@@ -1,0 +1,26 @@
+@charset "utf-8";
+.lg-toolbar {
+	background-color: rgba(255,255,255,0.00);
+}
+.lg-backdrop {
+	background-color: #FFFFFF;
+	color: rgba(51,51,51,1.00);
+}
+.lg-sub-html {
+	text-align: left;
+	background-color: transparent;
+	color: rgba(51,51,51,1.00);
+}
+.lg-actions .lg-prev,.lg-actions  .lg-next {
+	background-color: transparent;
+	color:  #999;
+	display: none;
+}
+.lg-actions .lg-prev:hover,.lg-actions .lg-next:hover, .lg-toolbar .lg-icon:hover {
+	color: #666;
+}
+@media screen and (min-width:480px) {
+	.lg-actions .lg-prev,.lg-actions  .lg-next {
+	display: block;
+}
+}

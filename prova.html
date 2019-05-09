@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento senza titolo</title>
+<!-- meta responsive viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no"/>
+<!--favicon-->
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<!-- Bootstrap 4.2.1 CDN-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!-- normalize.css CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<!-- preload.css-->
+<link href="assets/css/preload.css" rel="stylesheet" type="text/css">
+<!-- AOS.css CDN-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- info-viewport.css-->
+<link href="assets/css/info-viewport.css" rel="stylesheet">
+<!-- base-style.css-->
+<link href="assets/css/base-style.css" rel="stylesheet">
+</head>
+
+<body class="position-relative">
+
+<!------------------------------------------------------------nav-->
+<nav class="position-absolute w-100 py-4">
+  <div class="container">
+    <div class="row align-items-center">
+<!------------------------------------------------------------nav a-->
+      <div class="col-3 col-md-6"> <a href="#"> <img src="assets/css/logo-brur.svg" alt="" width="60" class="img-fluid"> </a> </div>
+<!------------------------------------------------------------nav a-->
+      <div class="col-3 col-md-2"> <a href="#about" id="nav-about" class="">About</a> </div>
+<!------------------------------------------------------------nav a-->
+      <div class="col-3 col-md-2"> <a href="#portfolio" id="nav-portfolio" class="">Portfolio</a> </div>
+<!------------------------------------------------------------nav a-->
+      <div class="col-3 col-md-2"> <a href="#contatti" id="nav-contatti" class="">Contatti</a> </div>
+    </div>
+  </div>
+</nav>
+<main>
+<style>
+	#prova {
+		color: rgba(10,10,50,0.80);
+/*		text-shadow: 0 2px 2px rgba(0,0,0,.5);
+*/		transition: all 300ms ease;
+	}
+	#background {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition: all 600ms ease;
+
+	}
+	#background img {
+		position: absolute;
+		transition: all 800ms ease;
+	}
+	#background img:hover {
+		transform: scale(1.1);
+	}
+	#background img.tree {
+		right: 20vw;
+		top: 18vh;
+		height: 50vh;
+		width: auto;
+		transition: all 1400ms ease;
+
+	}
+		#background img.sky {
+		width: 80vw;
+		top: 3vh;
+			left: 0
+
+	}
+		#background img.sea {
+		right: 4vw;
+		width: 60vW;
+		bottom:17vh;
+	}
+	#background img.green {
+		top: 15vh;
+		height: 32vh;
+		right: 50vw;
+	}
+	@media screen and (min-width:768px){
+			#background img.tree {
+		right: 30vw;
+	}
+		#background img.sky {
+		left: 45vw;
+		width: 40vw;top: 8vH;
+	}
+		#background img.sea {
+		right: 65vw;
+		width: 19vW;
+	}
+		#background img.green {
+			right: 25vw;
+		}
+	}
+</style>
+	<section id="prova" class="position-relative min-vh-100">
+		<div id="background" class="position-absolute vh-100">
+			<img src="assets/img/new/paper-02.png" alt="" class="sky">
+			<img src="assets/img/new/paper-03.png" alt="" class="sea">
+			<img src="assets/img/new/paper-06.png" alt="" class="green">
+			<img src="assets/img/new/paper-07.png" alt="" class="tree">
+		</div>
+		<div class="container vh-100">
+			<div class="row h-100 align-items-end py-5">
+				<div class="col-12 align-self-start">
+					<h1 class="h1 font-weight-bold mb-5">Benvenuto.</h1>
+				</div>
+					<div class="col-12">
+						<p class="h1 font-weight-bold align-self-end">Mi chiamo Bruno Urgo.</p>
+						<p class="h1 font-weight-bold">Qui potrai trovare i miei lavori e contattarmi per realizzare i tuoi progetti.</p>
+					</div>
+				</div>
+			</div>
+	
+	</section>
+</main>
+
+<!-- jQuery 3.3.1 lib CDN --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- popper lib CDN --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+<!-- Bootstrap 4.2.1 lib CDN --> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+<!-- AOS.js lib CDN --> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<!-- jQuery.appear lib CDN --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"></script> 
+<!-- jQuery.easing lib CDN --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script> 
+</body>
+</html>

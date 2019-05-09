@@ -1,0 +1,49 @@
+/*! `Custom` Bootstrap 4 theme   (https://themestr.app/customize)   */
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,300i,400,700,700i');
+$font-family-base:Prompt;
+$headings-font-family:Prompt;
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
+
+$primary:#007bff;
+$secondary:#007bff;
+$success:#28a745;
+$danger:#dc3545;
+$info:#17a2b8;
+$warning:#ffc107;
+$light:#f8f9fa;
+$dark:#343a40;
+
+$main:#692d46;
+$main-text:#904061;
+
+
+$headings-font-weight:700;
+
+
+/*! Import Bootstrap 4 variables */
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  danger: $danger,
+  info: $info,
+  warning: $warning,
+  light: $light,
+  dark: $dark,
+  
+  
+  
+  main: $main,
+  main-text: $main-text,
+);
+$body-color:$main-text;
+$link-color:$main-text;
+@import "bootstrap";
+
+// Add SASS theme customizations here..
+html {font-size: .8rem;}
+@include media-breakpoint-up(sm) {html {font-size: .9rem;}}
+@include media-breakpoint-up(md) {html {font-size: .9rem;}}
+@include media-breakpoint-up(lg) {html {font-size: 1rem;}}

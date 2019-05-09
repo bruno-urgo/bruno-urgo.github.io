@@ -1,0 +1,43 @@
+@charset "UTF-8";
+#info-viewport {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,1.00);
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+    font-size: 11px;
+    line-height: 40px;
+}
+#info-viewport:after {
+    content: 'xxs';
+}
+@media screen and (min-width:480px){
+	#info-viewport:after {
+		content: 'xs';
+	}
+}
+@media screen and (min-width:576px){
+	#info-viewport:after {
+		content: 'sm';
+	}
+}
+@media screen and (min-width:768px){
+	#info-viewport:after {
+		content: 'md';
+	}
+}
+@media screen and (min-width:992px){
+	#info-viewport:after {
+		content: 'lg';
+	}
+}
+@media screen and (min-width:1200px){
+	#info-viewport:after {
+		content: 'xl';
+	}
+}
+.fa-titter-f {
+}
