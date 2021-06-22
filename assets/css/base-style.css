@@ -79,12 +79,13 @@ ul li:before {
 /*---------------------------------------------------------#portfolio.wave-------*/
 #onda-01 {
 	left: 80%;
+	width: 100%;
 }
 #onda-02 {
 	transform: rotateZ(160deg);
 	right: 80%;
 	top: 80%;
-
+	width: 100%;
 }
 #onda-02 {
 	transform-origin: left;
@@ -97,6 +98,7 @@ ul li:before {
 	transform: rotate(250deg);
 	top: -8%;
 	left: 14%;
+	width: 100%;
 }
 .svg-animate{
 	stroke-dasharray:470 472;
