@@ -1,0 +1,55 @@
+{
+    "events": [
+        {
+            "id": "asasdasd",
+            "title": "First Event",
+            "description": "Some Desc",
+            "date_start": 1646157600,
+            "date_end": 1646157600,
+            "url": null,
+            "country": "Italy",
+            "city": "Naples",
+            "email_contact": null,
+            "franchise": [
+                "new_cardio"
+            ],
+            "area": "local",
+            "bsci_customer_program": 0,
+            "fruition": "F2F"
+        },
+        {
+            "id": "aaaasdssasdasd",
+            "title": "Second Event",
+            "description": "Some Desc",
+            "date_start": 1646935200,
+            "date_end": 1646935200,
+            "url": "https://wwww.event.com",
+            "country": null,
+            "city": null,
+            "email_contact": null,
+            "franchise": [
+                "LAAC"
+            ],
+            "area": "EMEA",
+            "bsci_customer_program": 1,
+            "fruition": "virtual"
+        },
+        {
+            "id": "ass",
+            "title": "Third Event",
+            "description": null,
+            "date_start": 1652378400,
+            "date_end": 1652378400,
+            "url": null,
+            "country": "Italy",
+            "city": "Salerno",
+            "email_contact": null,
+            "franchise": [
+                "CT"
+            ],
+            "area": "local",
+            "bsci_customer_program": 0,
+            "fruition": "hybrid"
+        }
+    ]
+}
